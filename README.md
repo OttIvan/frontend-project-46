@@ -13,25 +13,42 @@
 
 ## Установка
 
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
+Клонируйте репозиторий и установите зависимости:
 
 ```bash
 git clone https://github.com/OttIvan/frontend-project-46.git
 cd frontend-project-46
+npm install
 ```
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+Сравнение двух JSON-файлов:
+
+```bash
+gendiff file1.json file2.json
+```
+
+Пример результата:
+
+```text
+{
+  - follow: false
+    host: hexlet.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
+}
+```
+
+Справка по команде:
+
+```bash
+gendiff --help
+```
 
 ---
-
-<details>
-<summary>Автоматические тесты Хекслета</summary>
-
-Тесты запускаются на каждый коммит. За запуск отвечает файл `.github/workflows/hexlet-check.yml` — не удаляйте и не переименовывайте ни его, ни репозиторий.
-
-</details>
 
 ## О Хекслете
 
