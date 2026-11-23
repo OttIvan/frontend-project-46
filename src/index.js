@@ -7,8 +7,11 @@ const genDiff = (filepath1, filepath2) => {
   const absolutePath1 = path.resolve(process.cwd(), filepath1);
   const absolutePath2 = path.resolve(process.cwd(), filepath2);
 
-  const data1 = parse(fs.readFileSync(absolutePath1, 'utf-8'));
-  const data2 = parse(fs.readFileSync(absolutePath2, 'utf-8'));
+  const format1 = path.extname(absolutePath1);
+  const format2 = path.extname(absolutePath2);
+
+  const data1 = parse(fs.readFileSync(absolutePath1, 'utf-8'), format1);
+  const data2 = parse(fs.readFileSync(absolutePath2, 'utf-8'), format2);
 
   const keys = _.sortBy([...Object.keys(data1), ...Object.keys(data2)]);
 

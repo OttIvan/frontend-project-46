@@ -21,6 +21,7 @@ cd frontend-project-46
 npm install
 ```
 
+
 ## Использование
 
 Сравнение двух JSON-файлов:
@@ -48,7 +49,14 @@ gendiff file1.json file2.json
 gendiff --help
 ```
 
+### Демонстрация работы
+
+Запись работы программы с помощью asciinema:
+
+[![Демонстрация gendiff](https://asciinema.org/a/Kp9FjLKo4p8hCspD.svg)](https://asciinema.org/a/Kp9FjLKo4p8hCspD)
+
 ---
+
 
 ## О Хекслете
 
