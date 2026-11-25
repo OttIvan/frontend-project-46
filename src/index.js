@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import _ from 'lodash';
-import parse from './parser.js';
+import parse from './parsers.js';
 
 const genDiff = (filepath1, filepath2) => {
   const absolutePath1 = path.resolve(process.cwd(), filepath1);

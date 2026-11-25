@@ -31,7 +31,13 @@ npm install
 gendiff file1.json file2.json
 ```
 
-Пример результата:
+Сравнение двух YAML-файлов с расширениями `.yml` и `.yaml`:
+
+```bash
+node gendiff.js __fixtures__/file1.yml __fixtures__/file2.yaml
+```
+
+Форматы можно смешивать в одной команде. Пример результата:
 
 ```text
 {
@@ -55,6 +61,12 @@ gendiff --help
 Запись работы программы с помощью asciinema:
 
 [![Демонстрация gendiff](https://asciinema.org/a/Kp9FjLKo4p8hCspD.svg)](https://asciinema.org/a/Kp9FjLKo4p8hCspD)
+
+[Скачать запись сравнения YAML (asciinema)](docs/gendiff-yaml.cast). Команда для воспроизведения записи:
+
+```bash
+asciinema play docs/gendiff-yaml.cast
+```
 
 ---
 
