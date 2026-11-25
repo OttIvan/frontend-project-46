@@ -56,6 +56,12 @@ node gendiff.js --format stylish __fixtures__/file1.yml __fixtures__/file2.yaml
 node gendiff.js --format plain __fixtures__/file1.json __fixtures__/file2.json
 ```
 
+Формат `json` выводит дерево различий в машиночитаемом виде:
+
+```bash
+node gendiff.js --format json __fixtures__/file1.json __fixtures__/file2.json
+```
+
 Файлы JSON и YAML можно сравнивать между собой.
 
 Справка по команде:
@@ -86,6 +92,12 @@ asciinema play docs/gendiff-stylish.cast
 
 ```bash
 asciinema play docs/gendiff-plain.cast
+```
+
+[Скачать запись вывода в JSON](docs/gendiff-json.cast). Команда для воспроизведения:
+
+```bash
+asciinema play docs/gendiff-json.cast
 ```
 
 ---

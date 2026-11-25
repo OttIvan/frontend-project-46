@@ -1,0 +1,3 @@
+{"version":2,"width":92,"height":36,"title":"gendiff: JSON output"}
+[0.1,"o","$ node gendiff.js --format json file1.json file2.json\r\n"]
+[0.2061441,"o","[\r\n  {\r\n    \"key\": \"follow\",\r\n    \"type\": \"removed\",\r\n    \"value\": false\r\n  },\r\n  {\r\n    \"key\": \"host\",\r\n    \"type\": \"unchanged\",\r\n    \"value\": \"hexlet.io\"\r\n  },\r\n  {\r\n    \"key\": \"proxy\",\r\n    \"type\": \"removed\",\r\n    \"value\": \"123.234.53.22\"\r\n  },\r\n  {\r\n    \"key\": \"timeout\",\r\n    \"type\": \"changed\",\r\n    \"oldValue\": 50,\r\n    \"newValue\": 20\r\n  },\r\n  {\r\n    \"key\": \"verbose\",\r\n    \"type\": \"added\",\r\n    \"value\": true\r\n  }\r\n]\r\n"]

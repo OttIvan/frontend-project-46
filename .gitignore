@@ -4,3 +4,4 @@ coverage/
 !docs/gendiff-yaml.cast
 !docs/gendiff-stylish.cast
 !docs/gendiff-plain.cast
+!docs/gendiff-json.cast

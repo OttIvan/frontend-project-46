@@ -10,6 +10,7 @@ const readExpected = (filename) =>
 
 const expected = readExpected('expected.txt');
 const expectedPlain = readExpected('expected-plain.txt');
+const expectedJson = JSON.parse(readExpected('expected-json.json'));
 
 const filePairs = [
   ['file1.json', 'file2.json'],
@@ -34,6 +35,15 @@ test.each(filePairs)('compare %s and %s in plain format', (filename1, filename2)
   const filepath2 = getFixturePath(filename2);
 
   expect(genDiff(filepath1, filepath2, 'plain')).toBe(expectedPlain);
+});
+
+test.each(filePairs)('compare %s and %s in json format', (filename1, filename2) => {
+  const filepath1 = getFixturePath(filename1);
+  const filepath2 = getFixturePath(filename2);
+
+  const diff = genDiff(filepath1, filepath2, 'json');
+
+  expect(JSON.parse(diff)).toEqual(expectedJson);
 });
 
 test('reject an unknown output format', () => {
