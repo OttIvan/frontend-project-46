@@ -3,3 +3,4 @@ coverage/
 *.cast
 !docs/gendiff-yaml.cast
 !docs/gendiff-stylish.cast
+!docs/gendiff-plain.cast

@@ -50,6 +50,12 @@ gendiff file1.json file2.json
 node gendiff.js --format stylish __fixtures__/file1.yml __fixtures__/file2.yaml
 ```
 
+Формат `plain` перечисляет изменения по полным путям свойств:
+
+```bash
+node gendiff.js --format plain __fixtures__/file1.json __fixtures__/file2.json
+```
+
 Файлы JSON и YAML можно сравнивать между собой.
 
 Справка по команде:
@@ -74,6 +80,12 @@ asciinema play docs/gendiff-yaml.cast
 
 ```bash
 asciinema play docs/gendiff-stylish.cast
+```
+
+[Скачать запись сравнения в формате plain](docs/gendiff-plain.cast). Команда для воспроизведения:
+
+```bash
+asciinema play docs/gendiff-plain.cast
 ```
 
 ---
