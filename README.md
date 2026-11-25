@@ -1,5 +1,7 @@
 # Вычислитель отличий (JS)
 
+[![CI](https://github.com/OttIvan/frontend-project-46/actions/workflows/ci.yml/badge.svg)](https://github.com/OttIvan/frontend-project-46/actions/workflows/ci.yml)
+
 [![hexlet-check](https://github.com/OttIvan/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/OttIvan/frontend-project-46/actions)
 
 Узнаете, как создавать cli приложения, парсить и форматировать данные в json, yaml. Научитесь проектировать архитектуру приложений. А также писать unit-тесты.
@@ -20,7 +22,6 @@ git clone https://github.com/OttIvan/frontend-project-46.git
 cd frontend-project-46
 npm install
 ```
-
 
 ## Использование
 
@@ -56,7 +57,6 @@ gendiff --help
 [![Демонстрация gendiff](https://asciinema.org/a/Kp9FjLKo4p8hCspD.svg)](https://asciinema.org/a/Kp9FjLKo4p8hCspD)
 
 ---
-
 
 ## О Хекслете
 

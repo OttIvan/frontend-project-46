@@ -28,10 +28,7 @@ const genDiff = (filepath1, filepath2) => {
       return [`    ${key}: ${data1[key]}`];
     }
 
-    return [
-      `  - ${key}: ${data1[key]}`,
-      `  + ${key}: ${data2[key]}`,
-    ];
+    return [`  - ${key}: ${data1[key]}`, `  + ${key}: ${data2[key]}`];
   });
 
   return `{\n${lines.join('\n')}\n}`;
