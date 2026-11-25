@@ -2,3 +2,4 @@ node_modules/
 coverage/
 *.cast
 !docs/gendiff-yaml.cast
+!docs/gendiff-stylish.cast

@@ -25,19 +25,13 @@ npm install
 
 ## Использование
 
-Сравнение двух JSON-файлов:
+По умолчанию `gendiff` выводит различия в формате `stylish`. Сравнение двух JSON-файлов:
 
 ```bash
 gendiff file1.json file2.json
 ```
 
-Сравнение двух YAML-файлов с расширениями `.yml` и `.yaml`:
-
-```bash
-node gendiff.js __fixtures__/file1.yml __fixtures__/file2.yaml
-```
-
-Форматы можно смешивать в одной команде. Пример результата:
+Пример результата:
 
 ```text
 {
@@ -49,6 +43,14 @@ node gendiff.js __fixtures__/file1.yml __fixtures__/file2.yaml
   + verbose: true
 }
 ```
+
+Для вложенных объектов вывод показывает изменения на каждом уровне. Сравнение двух YAML-файлов с явным выбором формата:
+
+```bash
+node gendiff.js --format stylish __fixtures__/file1.yml __fixtures__/file2.yaml
+```
+
+Файлы JSON и YAML можно сравнивать между собой.
 
 Справка по команде:
 
@@ -66,6 +68,12 @@ gendiff --help
 
 ```bash
 asciinema play docs/gendiff-yaml.cast
+```
+
+[Скачать запись сравнения вложенных файлов в формате stylish](docs/gendiff-stylish.cast). Команда для воспроизведения:
+
+```bash
+asciinema play docs/gendiff-stylish.cast
 ```
 
 ---
